@@ -3,6 +3,10 @@ server:
   port: 9090
   servlet:
     context-path: /sb-dev-demplate
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 200MB
 
 # DataSource Config
 spring:
@@ -18,6 +22,8 @@ logging:
     level:
       team.shiver: debug
 #    path:
+
+
 
 
 
